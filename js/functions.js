@@ -32,7 +32,7 @@
 		navbar: {
 			title: 'MENU'
 		},
-		navbars: [{position:'bottom',content: ['<a href="#0">© 2018 Sparker</a>']}]}, 
+		navbars: [{position:'bottom',content: ['<a href="#0">© 2018 Surabaya</a>']}]}, 
 		{
 		// configuration
 		clone: true,
