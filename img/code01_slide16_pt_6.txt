@@ -1,0 +1,28 @@
+#include <GL/glut.h>
+
+#include <stdlib.h>
+
+void drawLineStrip(void)
+{
+       glBegin(GL_LINE_LOOP);      
+         glVertex2i(100,100);
+         glVertex2i(200,150);
+         glVertex2i(300,50);
+       glEnd();
+       
+       glFlush();
+}
+
+int main (int argc, char **argv) {
+       glutInit(&argc, argv);
+      
+       glutInitDisplayMode(GLUT_DEPTH | GLUT_SINGLE | GLUT_RGBA);
+       glutInitWindowPosition(100,100);
+       glutInitWindowSize(320,240);
+
+       glutCreateWindow("Pemrograman Grafis GLUT");
+       gluOrtho2D(-320.,320.,-240.,240.);
+       glutDisplayFunc(drawLineStrip);
+       glutMainLoop();
+}
+
